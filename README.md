@@ -1,2 +1,2 @@
 # classifix
-A tool for classifying things and generating reports
+A tool for classifying things and generating reports.
