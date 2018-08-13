@@ -1,5 +1,5 @@
 <h2>List Systems</h2>
 <% @sys.each do |i| %>
-    <%= i.name %><br>
+    <%= i.name %> <%= link_to 'Classify System', classification_index_path %><br>
 <% end %>
 <%= link_to 'New System', new_system_path %>
