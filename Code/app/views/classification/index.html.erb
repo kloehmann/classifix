@@ -1,8 +1,0 @@
-<h2>Classify Systems</h2>
-<% @topic.each do |i| %>
-    <%= i.name %><br>
-    <% @item.each do |j| %>
-        <%= check_box_tag "", "yes" %>
-        <%= j.name %>
-    <% end %>
-<% end %>

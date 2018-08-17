@@ -1,29 +1,27 @@
 class ClassificationController < ApplicationController
-    def index
+    def show
         @item = Item.all
-        @topic = Topic.all
-    end
-    
-    #generate a new system object
-    def new
-        @sys = System.new
-    end
-    
-    #create a new system and redirect
-    def create
-        @sys = System.new(system_params)
-       
-        if @sys.save
-          redirect_to @sys
-        else
-          render 'new'
-        end
-    end
-    
-    #this is a definition for the allowed parameters entered to the program
-    private
-    def system_params
-        params.require(:item).permit(:name)
-    end
+        @topic = Topic.all 
 
+        @system_id = params[:id]
+        @classification = Classification.where(system: @system_id).pluck(:item_id)
+        
+
+    end
+        
+    def update
+        @system_id = params[:id]
+        @classification = Classification.where(system: @system_id)
+        @classification.each do |c|
+            c.destroy
+        end
+        Item.all.each do |i|
+            if params.has_key?(i.key)
+                c = Classification.new(system: System.find(@system_id), item: i)
+                c.save
+            end
+        end
+        redirect_to action: "show", id: @system_id
+ 
+    end
 end

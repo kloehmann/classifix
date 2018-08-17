@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_06_102628) do
+ActiveRecord::Schema.define(version: 2018_08_15_104915) do
 
   create_table "classifications", force: :cascade do |t|
     t.integer "system_id"
@@ -20,11 +20,13 @@ ActiveRecord::Schema.define(version: 2018_08_06_102628) do
   end
 
   create_table "items", force: :cascade do |t|
-    t.string "name"
+    t.string "key"
+    t.string "label"
     t.text "description"
     t.integer "topic_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["topic_id"], name: "index_items_on_topic_id"
   end
 
   create_table "systems", force: :cascade do |t|
@@ -33,8 +35,15 @@ ActiveRecord::Schema.define(version: 2018_08_06_102628) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "topics", force: :cascade do |t|
+  create_table "technical_characteristics", force: :cascade do |t|
     t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "topics", force: :cascade do |t|
+    t.string "key"
+    t.string "label"
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

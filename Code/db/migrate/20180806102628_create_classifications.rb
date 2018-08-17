@@ -1,8 +1,8 @@
 class CreateClassifications < ActiveRecord::Migration[5.2]
   def change
     create_table :classifications do |t|
-      t.integer :system_id
-      t.integer :item_id
+      t.references :system
+      t.references :item
 
       t.timestamps
     end

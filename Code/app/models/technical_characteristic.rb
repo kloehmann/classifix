@@ -1,0 +1,2 @@
+class TechnicalCharacteristic < ApplicationRecord
+end
