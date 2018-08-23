@@ -2,10 +2,12 @@
 <%= form_tag('/classification/' + @system_id, method: :put) do %>
     <% @topic.each do |t| %>
         <%= t.label %><br>
-        <% @item.each do |i| %>
+        <% @item_label = Item.where("topic_id = ?", t) %>
+        <% @item_label.each do |i| %>
             <%= check_box_tag i.key, "1", checked = @classification.include?(i.id)%>
-            <%= i.label %>
+            <%= i.label %><br>
         <% end %>
     <% end %>
     <%= submit_tag %>
 <% end %>
+<%= link_to 'Enter Technical Characteristics', technical_characteristics_path %>

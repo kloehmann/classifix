@@ -1,0 +1,5 @@
+<h2>Enter Technical Charactersitics</h2>
+<% @tech.each do |i| %>
+    <%= i.name %><br>
+<% end %>
+<%= link_to 'Enter New Technical Characteristic', new_technical_characteristic_path %>
