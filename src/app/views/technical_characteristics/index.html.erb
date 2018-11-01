@@ -2,4 +2,5 @@
 <% @tech.each do |i| %>
     <%= i.name %><br>
 <% end %>
-<%= link_to 'Enter New Technical Characteristic', new_technical_characteristic_path %>
+<%= link_to 'Enter New Technical Characteristic', new_technical_characteristic_path(:system_id => @system_id) %>
+<%= link_to 'Back to classification', classification_path(@system_id) %>

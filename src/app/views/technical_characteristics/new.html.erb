@@ -1,10 +1,15 @@
 <%= form_with scope: :technical_characteristic, url: technical_characteristics_path, local: true do |form| %>
   <p>
     <%= form.label :name %><br>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, autofocus: true %>
+    <%= hidden_field_tag 'system_id', @system_id %>
   </p>
  
   <p>
     <%= form.submit %>
   </p>
+
+
+  <%= link_to 'Back to technical characteristics', technical_characteristics_path(:system_id => @system_id) %>
+
 <% end %>

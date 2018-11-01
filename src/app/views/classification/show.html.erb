@@ -10,4 +10,5 @@
     <% end %>
     <%= submit_tag %>
 <% end %>
-<%= link_to 'Enter Technical Characteristics', technical_characteristics_path %>
+<%= link_to 'Enter Technical Characteristics', technical_characteristics_path(:system_id => @system_id) %>
+<%= link_to 'Back to systems', system_index_path %>
