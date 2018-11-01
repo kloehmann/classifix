@@ -19,7 +19,7 @@ class SystemController < ApplicationController
         @sys = System.new(system_params)
        
         if @sys.save
-          redirect_to @sys
+          redirect_to classification_path(@sys.id)
         else
           render 'new'
         end

@@ -17,6 +17,8 @@ ActiveRecord::Schema.define(version: 2018_08_15_104915) do
     t.integer "item_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["item_id"], name: "index_classifications_on_item_id"
+    t.index ["system_id"], name: "index_classifications_on_system_id"
   end
 
   create_table "items", force: :cascade do |t|
