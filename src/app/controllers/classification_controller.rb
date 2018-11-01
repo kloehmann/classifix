@@ -15,8 +15,10 @@ class ClassificationController < ApplicationController
         @classification.each do |c|
             c.destroy
         end
+
         Item.all.each do |i|
             if params.has_key?(i.key)
+                # FIXME There is an error here. The params contain the key "controller", hence controlller will always be selected.
                 c = Classification.new(system: System.find(@system_id), item: i)
                 c.save
             end

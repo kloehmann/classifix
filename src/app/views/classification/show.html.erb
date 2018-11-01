@@ -1,4 +1,5 @@
 <h2>Classify Systems</h2>
+
 <%= form_tag('/classification/' + @system_id, method: :put) do %>
     <% @topic.each do |t| %>
         <%= t.label %><br>
