@@ -5,7 +5,7 @@
         <%= t.label %><br>
         <% @item_label = Item.where("topic_id = ?", t) %>
         <% @item_label.each do |i| %>
-            <%= check_box_tag i.key, "1", checked = @classification.include?(i.id)%>
+            <%= check_box_tag "ci_" + i.key, "1", checked = @classification.include?(i.id)%>
             <%= i.label %><br>
         <% end %>
     <% end %>
