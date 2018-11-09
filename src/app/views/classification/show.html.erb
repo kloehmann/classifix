@@ -1,15 +1,16 @@
 <h2>Classify Systems</h2>
 
 <%= form_tag('/classification/' + @system_id, method: :put) do %>
-    <% @topic.each do |t| %>
-        <%= t.label %><br>
-        <% @item_label = Item.where("topic_id = ?", t) %>
-        <% @item_label.each do |i| %>
-            <%= check_box_tag "ci_" + i.key, "1", checked = @classification.include?(i.id)%>
-            <%= i.label %><br>
-        <% end %>
+  <% @topics = @outline_items.where(parent: nil) %>
+  <% @topics.each do |topic|%>
+    <h3><%= topic.label %></h3>
+    <% @items_in_topic = @outline_items.where(parent: topic) %>
+    <% @items_in_topic.each do |outline_item| %>
+      <%= check_box_tag "oi_" + outline_item.key, "1", checked = @classifications.include?(outline_item.id)%>
+      <%= outline_item.label %><br>
     <% end %>
-    <%= submit_tag %>
+  <% end %>
+<%= submit_tag %>
 <% end %>
 <%= link_to 'Enter Technical Characteristics', technical_characteristics_path(:system_id => @system_id) %>
 <%= link_to 'Back to systems', system_index_path %>

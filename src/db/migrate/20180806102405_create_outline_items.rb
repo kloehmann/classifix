@@ -1,9 +1,10 @@
-class CreateTopics < ActiveRecord::Migration[5.2]
+class CreateOutlineItems < ActiveRecord::Migration[5.2]
   def change
-    create_table :topics do |t|
+    create_table :outline_items do |t|
       t.string :key, unique: true
       t.string :label
       t.text :description
+      t.references :parent 
 
       t.timestamps
     end

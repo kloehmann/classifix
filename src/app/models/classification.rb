@@ -1,4 +1,4 @@
 class Classification < ApplicationRecord
-    belongs_to :system
-    belongs_to :item
+  belongs_to :system
+  belongs_to :outline_item
 end

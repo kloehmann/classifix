@@ -14,21 +14,21 @@ ActiveRecord::Schema.define(version: 2018_08_15_104915) do
 
   create_table "classifications", force: :cascade do |t|
     t.integer "system_id"
-    t.integer "item_id"
+    t.integer "outline_item_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["item_id"], name: "index_classifications_on_item_id"
+    t.index ["outline_item_id"], name: "index_classifications_on_outline_item_id"
     t.index ["system_id"], name: "index_classifications_on_system_id"
   end
 
-  create_table "items", force: :cascade do |t|
+  create_table "outline_items", force: :cascade do |t|
     t.string "key"
     t.string "label"
     t.text "description"
-    t.integer "topic_id"
+    t.integer "parent_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["topic_id"], name: "index_items_on_topic_id"
+    t.index ["parent_id"], name: "index_outline_items_on_parent_id"
   end
 
   create_table "systems", force: :cascade do |t|
@@ -39,14 +39,6 @@ ActiveRecord::Schema.define(version: 2018_08_15_104915) do
 
   create_table "technical_characteristics", force: :cascade do |t|
     t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "topics", force: :cascade do |t|
-    t.string "key"
-    t.string "label"
-    t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
