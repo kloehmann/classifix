@@ -1,0 +1,23 @@
+<h1>Security Recommendations for <%= @system.name %></h1>
+
+
+  <% @topics = @outline_items.where(parent: nil) %>
+  <% @topics.each do |topic|%>
+    <h2><%= topic.label %></h2>
+    <% @items_in_topic = @outline_items.where(parent: topic) %>
+    <% @items_in_topic.each do |outline_item| %>
+      <h3> <%= outline_item.label if @classifications.include?(outline_item.id) %> </h3>
+      <% @recommendations_for_item = @recommendations.where(outline_item: outline_item) %>
+      <% @recommendations_for_item.each do |recommendation| %>
+        <h4> <%= recommendation.title %> </h4>
+        <h5>Security Implication</h5>
+        <h5>Security Goal</h5>
+        <h5>General Recommendation</h5>
+        <h5>Test Guidance</h5>
+      <% end %>
+    <% end %>
+  <% end %>
+
+
+
+<%= link_to 'Back to systems', system_index_path %>

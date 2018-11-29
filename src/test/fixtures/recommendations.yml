@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  implications: MyString
+  goal: MyString
+  generalrecommendation: MyString
+  testguidance: MyString
+
+two:
+  title: MyString
+  implications: MyString
+  goal: MyString
+  generalrecommendation: MyString
+  testguidance: MyString

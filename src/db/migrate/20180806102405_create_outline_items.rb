@@ -4,7 +4,7 @@ class CreateOutlineItems < ActiveRecord::Migration[5.2]
       t.string :key, unique: true
       t.string :label
       t.text :description
-      t.references :parent 
+      t.references :parent
 
       t.timestamps
     end

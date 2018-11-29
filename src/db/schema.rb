@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_15_104915) do
+ActiveRecord::Schema.define(version: 2018_11_09_222234) do
 
   create_table "classifications", force: :cascade do |t|
     t.integer "system_id"
@@ -29,6 +29,18 @@ ActiveRecord::Schema.define(version: 2018_08_15_104915) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["parent_id"], name: "index_outline_items_on_parent_id"
+  end
+
+  create_table "recommendations", force: :cascade do |t|
+    t.string "title"
+    t.string "implications"
+    t.string "goal"
+    t.string "generalrecommendation"
+    t.string "testguidance"
+    t.integer "outline_item_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["outline_item_id"], name: "index_recommendations_on_outline_item_id"
   end
 
   create_table "systems", force: :cascade do |t|

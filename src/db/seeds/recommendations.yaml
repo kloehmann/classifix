@@ -1,0 +1,858 @@
+# Recommendations - Use the first as template
+# - title:
+#   implications: |
+#   goal: |
+#   generalrecommendation: |
+#   testguidance: |
+#   outline_item:
+
+
+- title: Inform user about security implications
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: 
+
+- title: Adjustable security level
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: 
+
+
+- title: Use irregular wake-up intervals
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: 
+
+
+- title: Integrate Security in Development Process
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: 
+
+- title: Input Validation
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: component_types
+
+- title: Only use authenticated communication
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: component_types
+
+- title: Limit transmitted data to required minimum
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: component_types
+
+
+- title: Use Encryption
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: component_types
+
+
+- title: Tampering Protection
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: component_types
+
+- title: Battery Warning
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: component_types
+
+- title: Health Check
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: component_types
+
+- title: Hollistic reset
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: component_types
+
+- title: Do not use hard coded secrets
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: component_types
+
+- title: Missing component
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: component_types
+
+
+- title: Secure Pairing
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: component_types
+
+- title: Check of Values
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: sensors
+
+
+- title: Sane Fallbacks
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: actuators
+
+- title: Physical Control
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: actuators
+
+- title: Passive behaviour
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: repeaters
+
+- title: Access Control
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: complex_components
+
+- title: Use trusted time_source
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: complex_components
+
+- title: Enforce strong credentials
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: complex_components
+
+- title: Use trusted backend by default
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: complex_components
+
+- title: Use secure registration with backend
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: complex_components
+
+- title: Disable local network API by default
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: complex_components
+
+- title: Administrative / Maintenance Access
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: complex_comoponents
+
+- title: Secure Storage of data
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: complex_components
+
+
+- title: Encryption of video control channel
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: camera
+
+- title: Authentication of video stream
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: camera
+
+- title: Authenticated access to video stream
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: camera
+
+- title: Limit transmitted data
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: camera
+
+- title: User permissions
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: controller
+
+
+- title: Payload Inspection
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: protocol_bridge
+
+
+- title: Use trusted backend by default
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: frontends
+
+- title: Input validation in backend
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: frontends
+
+- title: Two Factor authentication
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: frontends
+
+- title: No side loading of content and data
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: frontends
+
+- title: Enforce Password protection
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: mobile_app
+
+- title: No means to integrate with other apps
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: mobile_app
+
+- title: Use minimal app permission
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: mobile_app
+
+- title: Use secure keystore
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: mobile_app
+
+- title: Do not provide significant application logic in app
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: mobile_app
+
+- title: Prevent code injection
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: web_frontend
+
+- title: No unencrypted content
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: web_frontend
+
+- title: Input validation
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: internet_backend
+
+- title: Limit transmitted data to required minimum
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: internet_backend
+
+- title: Collections may be initiated by components only
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: internt_backend
+
+- title: Account lockout policy
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: internet_backend
+
+- title: Use trusted time source
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: internet_backend
+
+- title: Ensure plausability of environment parameters
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: automation
+
+- title: Setup of association from trusted devices
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: sensor_actuator_association
+
+- title: User notification
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: automation
+
+- title: Proposal - Permissions
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: sensor_actuator_association
+
+- title: App - Access Control
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: manual_software_control
+
+- title: Authentication
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: manual_software_control
+
+- title: Trust Relationship
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: manual_software_control
+
+- title: Proposal - User permissions
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: manual_software_control
+
+- title: Validate Trigger Condition
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: static_rules
+
+- title: Unexpected Behaviour
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: static_rules
+
+- title: Proposal Static validation of rules
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: static_rules
+
+- title: Proposal Prioritisation of rules
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: static_rules
+
+- title: Limit Range of input values
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: adaptive_automation
+
+- title: Sanity Check of Input Arguments
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: adaptive_automation
+
+- title: Sanity Check of Output
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: adaptive_automation
+
+- title: Limit Range of output
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: adaptive_automation
+
+- title: Proposal Overfitting / Underfitting
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: adaptive_automation
+
+- title: Catastrophic forgetting
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: adaptive_automation
+
+- title: Allow signed components only
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: extensibility
+
+- title: Limit allowed functionality to minimum
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: arbitrary_devices
+
+- title: Inform User about security implication
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: arbitrary_devices
+
+- title: Proposal Disregard in high security environments
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: arbitrary_devices
+
+
+- title: Limit installation sources
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: software_addons
+
+- title: Allow only components that have passed quality review
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: software-addons
+
+- title: Proposal Double signature
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: software_addons
+
+- title: Check hardware signature beyond PID and VID
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: hardware_addons
+
+- title: Proposal Tampering Protection
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: hardware_addons
+
+- title: Check manufacturer's approval
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: extension modules
+
+- title: In high security environments Diregard
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: extension_modules
+
+- title: Single responsibility
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: extension_modules
+
+- title: Only allow application usage
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: extension_modules
+
+- title: Static code analysis
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: hidden_features
+
+- title: Ensure isolation of hidden features
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: hidden_features
+
+- title: Must work in conjunction
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: hidden_features
+
+- title: Sanity Check
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: hidden_features
+
+- title: Disable
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: hidden_features
+
+- title: Perform security classification
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: hidden_features
+
+- title: Use trusted connections
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: third_party_services
+
+- title: Do not allow management through third party services
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: third_party_services
+
+- title: Authentication
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: third_party_services
+
+- title: User- or system based control
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: third_party_services
+
+- title: Disregard in high security environments
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: third_party_services
+
+- title: In high security environments disregard
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: integration_with_other_iot_systems
+
+- title: Degreading of integrated systems
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: integration_with_iot_systems
+
+- title: Authentication
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: access_paths_components
+
+- title: Encryption
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: access_paths_components
+
+- title: Replay Safety
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: access_paths_components
+
+- title: Jamming Detection and protection
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: access_path_components
+
+- title: Encryption
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: radio_components
+
+- title: Autonomous Operation
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: radio_components
+
+- title: Authentication
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: wired_components
+
+- title: Interruption of communication
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: wired_components
+
+- title: Do not provide sensitive information
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: local_network_api
+
+- title: Do not allow control or maintenance functions
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: local_network_api
+
+- title: Use authentication tokens from trusted sources
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: local_network_api
+
+- title: Do not rely on external security
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: local_network_api
+
+- title: Use encryption
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: local_network_api
+
+- title: Use standardized protocols with validated security
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: local_network_api
+
+- title: Use encryption
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: internet_api
+
+- title: Use trusted certificates
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: internet_api
+
+- title: Use mutual authentication
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: internet_api
+
+- title: Provide single API
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: internet_api
+
+- title: Use permissions for different clients
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: internet_api
+
+- title: Use protocols with validated security
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: non_api_access
+
+- title: Disable in normal operation
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: non_api_access
+
+- title: Degrade Security if ativated
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: non_api_access
+
+- title: Context
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: functional_scope
+
+- title: Use current patch levels
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: component_software_stack
+
+- title: Check seccurity recommendations and vulnerabilities
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: component_software_stack
+
+- title: Apply security recommendations for protocols in use
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: communication_protocols
+
+- title: DoS Safety
+  implications: |
+  goal: |
+  generalrecommendation: |
+  testguidance: |
+  outline_item: communication_protocols

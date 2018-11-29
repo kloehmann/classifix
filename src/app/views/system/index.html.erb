@@ -1,5 +1,5 @@
 <h2>List Systems</h2>
-<% @sys.each do |i| %>
-    <%= i.name %> <%= link_to 'Classify System', classification_path(i.id) %><br>
+<% @sys.each do |system| %>
+    <%= system.name %> <%= link_to 'Classify System', classification_path(system.id) %> <%= link_to 'Recommendations', recommendation_path(system.id) %><br>
 <% end %>
 <%= link_to 'New System', new_system_path %>
